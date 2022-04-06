@@ -1,11 +1,21 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Button} from 'react-native';
+import {NativeModules} from 'react-native';
+const {CalendarModule} = NativeModules;
 
 export const AndroidCalendarModule = ({navigation}: any) => {
-  navigation.route;
+  navigation._void;
+  const onPress = () => {
+    console.log('We will invoke the native module here!');
+    CalendarModule.createCalendarEvent('testName', 'testLocation');
+  };
   return (
     <View>
-      <Text>{'AndroidCalendarModule'}</Text>
+      <Button
+        title="Click to invoke your native module!"
+        color="#841584"
+        onPress={onPress}
+      />
     </View>
   );
 };
