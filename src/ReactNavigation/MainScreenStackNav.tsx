@@ -8,7 +8,7 @@ import {Alert, Button} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
-const MainScreen = () => {
+const MainScreenStackNav = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -61,4 +61,4 @@ const MainScreen = () => {
     </Stack.Navigator>
   );
 };
-export default MainScreen;
+export default MainScreenStackNav;

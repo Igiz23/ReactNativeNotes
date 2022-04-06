@@ -65,7 +65,7 @@ const Hello: React.FC<Props> = ({baseEnthusiasmLevel = 0, navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',

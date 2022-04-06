@@ -1,6 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import MainScreen from './MainScreen';
+import MainScreenStackNav from './MainScreenStackNav';
+import TabHomeScreen from '../TabHomeScreen/TabHomeScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -13,8 +14,8 @@ const TabNavigation = () => {
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
       })}>
-      <Tab.Screen name={'StackNav'} component={MainScreen} />
-      <Tab.Screen name={'Main'} component={MainScreen} />
+      <Tab.Screen name={'StackNav'} component={MainScreenStackNav} />
+      <Tab.Screen name={'TabHome'} component={TabHomeScreen} />
     </Tab.Navigator>
   );
 };
