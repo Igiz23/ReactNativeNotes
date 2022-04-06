@@ -1,6 +1,7 @@
-import {View, Button, Text, StyleSheet} from 'react-native';
+import {View, Button, Text, StyleSheet, Alert} from 'react-native';
 import React from 'react';
 import {Image} from 'react-native';
+import {useFocusEffect} from '@react-navigation/native';
 
 export const LogoTitle = () => {
   return (
@@ -12,6 +13,17 @@ export const LogoTitle = () => {
 };
 
 export const ModalScreen = ({navigation}: any) => {
+  useFocusEffect(
+    React.useCallback(() => {
+      Alert.alert('ModalScreen was focused');
+      // Do something when the screen is focused
+      return () => {
+        Alert.alert('ModalScreen was unfocused');
+        // Do something when the screen is unfocused
+        // Useful for cleanup functions
+      };
+    }, []),
+  );
   return (
     <View style={styles.container}>
       <Text style={styles.greeting}>
@@ -39,6 +51,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   textHeader: {
+    textAlign: 'center',
     paddingHorizontal: 15,
     textTransform: 'uppercase',
     color: '#f00',

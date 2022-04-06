@@ -16,7 +16,6 @@ const MainScreen = () => {
         headerStyle: {
           backgroundColor: '#fff',
         },
-        headerTintColor: '#000',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
@@ -39,6 +38,7 @@ const MainScreen = () => {
           component={ModalScreen}
           options={{
             headerTitle: () => <LogoTitle />,
+            headerTitleAlign: 'center',
             headerRight: () => (
               <Button
                 onPress={() => Alert.alert('This is a button!')}
@@ -53,7 +53,8 @@ const MainScreen = () => {
                 color="#00cc00"
               />
             ),
-            headerBackImageSource: require('../assets/icon-react.png'),
+            headerTintColor: '#154fa2',
+            headerBackImageSource: require('../assets/circled-left-2.png'),
           }}
         />
       </Stack.Group>

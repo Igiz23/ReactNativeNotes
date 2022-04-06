@@ -59,11 +59,6 @@ const Hello: React.FC<Props> = ({baseEnthusiasmLevel = 0, navigation}) => {
             color={'#003454'}
             onPress={() => navigation.navigate('ModalScreen')}
           />
-          <Button
-            title={'Open Modal screen'}
-            color={'#503420'}
-            onPress={() => navigation.navigate('ModalScreen')}
-          />
         </View>
       </View>
     </ScrollView>
@@ -74,7 +69,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     padding: 15,
   },
   greeting: {
