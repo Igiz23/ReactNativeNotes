@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {TabHomeMain} from './TabHomeMain';
-import {AndroidCalendarModule} from './AndroidNativeModule/AndroidCalendarModule';
+import {AndroidNativeModule} from './AndroidNativeModule/AndroidNativeModule';
 const TabHomeStack = createNativeStackNavigator();
 
 const TabHomeScreen = () => {
@@ -15,13 +15,13 @@ const TabHomeScreen = () => {
         />
         <TabHomeStack.Screen
           options={{
-            headerTitle: 'Android Calendar Module in Kotlin',
+            headerTitle: 'Android Native Module in Kotlin',
             headerStyle: {
-              backgroundColor: '#107854',
+              backgroundColor: '#B75EA4',
             },
           }}
-          name={'AndroidCalendarModule'}
-          component={AndroidCalendarModule}
+          name={'AndroidNativeModule'}
+          component={AndroidNativeModule}
         />
       </TabHomeStack.Group>
     </TabHomeStack.Navigator>

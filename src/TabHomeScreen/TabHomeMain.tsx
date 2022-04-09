@@ -5,9 +5,9 @@ export const TabHomeMain = ({navigation}: any) => {
   return (
     <View style={styles.container}>
       <Button
-        title={'Open Android Calendar Module'}
+        title={'Open Android Native Module'}
         color={'#107854'}
-        onPress={() => navigation.navigate('AndroidCalendarModule')}
+        onPress={() => navigation.navigate('AndroidNativeModule')}
       />
     </View>
   );
