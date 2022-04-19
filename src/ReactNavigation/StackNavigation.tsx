@@ -31,7 +31,7 @@ type HomeProps = {
 const StackNavigation: React.FC<HomeProps> = ({route, navigation}) => {
   const arg = Object.entries(route.params);
   return (
-    <ScrollView>
+    <ScrollView style={{backgroundColor: '#FFFFFF'}}>
       <>
         <View style={styles.container}>
           <Text style={styles.greeting}>Passing parameters to routes:</Text>
