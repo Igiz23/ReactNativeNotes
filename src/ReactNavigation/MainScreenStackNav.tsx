@@ -24,12 +24,17 @@ const MainScreenStackNav = () => {
         <Stack.Screen
           name={'Home'}
           component={Home}
-          options={{headerShown: false}}
+          options={{headerTitleAlign: 'center'}}
         />
         <Stack.Screen
           name={'StackNavigation'}
           component={StackNavigation}
-          options={{title: 'My custom title'}}
+          options={{
+            headerTitle: () => <LogoTitle />,
+            headerTitleAlign: 'center',
+            // headerBackImageSource: require('../assets/circled-left-2.png'),
+            headerTintColor: '#2934D0',
+          }}
         />
       </Stack.Group>
       <Stack.Group screenOptions={{presentation: 'modal'}}>

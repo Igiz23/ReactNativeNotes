@@ -7,13 +7,13 @@ import {
   InteractionManager,
 } from 'react-native';
 import React from 'react';
-import {Image} from 'react-native';
+// import {Image} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 
 export const LogoTitle = () => {
   return (
     <>
-      <Image style={styles.img} source={require('../assets/icon-react.png')} />
+      {/*<Image style={styles.img} source={require('../assets/icon-react.png')} />*/}
       <Text style={styles.textHeader}>Custom</Text>
     </>
   );
@@ -67,8 +67,12 @@ const styles = StyleSheet.create({
   textHeader: {
     textAlign: 'center',
     paddingHorizontal: 15,
-    textTransform: 'uppercase',
-    color: '#f00',
+    color: '#22215B',
+    fontFamily: 'Open Sans',
+    fontStyle: 'normal',
+    fontSize: 18,
+    fontWeight: 'bold',
+    lineHeight: 25,
   },
   img: {
     width: 45,
