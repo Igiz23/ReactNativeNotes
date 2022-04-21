@@ -94,6 +94,11 @@ const Hello: React.FC<Props> = ({baseEnthusiasmLevel = 0, navigation}) => {
               }
             />
             <Button
+              title={'Open Top Tabs'}
+              color={'#501054'}
+              onPress={() => navigation.navigate('MaterialTopTabs')}
+            />
+            <Button
               title={'Open Modal screen'}
               color={'#003454'}
               onPress={() => navigation.navigate('ModalScreen')}
