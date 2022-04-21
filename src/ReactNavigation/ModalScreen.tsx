@@ -7,14 +7,12 @@ import {
   InteractionManager,
 } from 'react-native';
 import React from 'react';
-// import {Image} from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
 
 export const LogoTitle = () => {
   return (
     <>
-      {/*<Image style={styles.img} source={require('../assets/icon-react.png')} />*/}
-      <Text style={styles.textHeader}>Custom</Text>
+      <Text style={styles.textHeader}>Header</Text>
     </>
   );
 };

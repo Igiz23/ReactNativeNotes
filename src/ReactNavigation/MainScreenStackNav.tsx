@@ -5,6 +5,7 @@ import StackNavigation from './StackNavigation';
 import {ModalScreen} from './ModalScreen';
 import {LogoTitle} from './ModalScreen';
 import {Alert, Button} from 'react-native';
+import MaterialTopTabs from './MaterialTopTabs';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,7 +33,15 @@ const MainScreenStackNav = () => {
           options={{
             headerTitle: () => <LogoTitle />,
             headerTitleAlign: 'center',
-            // headerBackImageSource: require('../assets/circled-left-2.png'),
+            headerTintColor: '#2934D0',
+          }}
+        />
+        <Stack.Screen
+          name={'MaterialTopTabs'}
+          component={MaterialTopTabs}
+          options={{
+            headerTitle: 'Material Top Tabs',
+            headerTitleAlign: 'center',
             headerTintColor: '#2934D0',
           }}
         />
